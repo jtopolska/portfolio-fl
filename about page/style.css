@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --f-family: 'Fredoka One', cursive;
+    --f2-family: 'Varela Round', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--f-family);
+    background-color: #fff;
+    height: 100vh;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--f2-family);
+    margin: 0 10%;
+    padding-bottom: 5%;
+}
+
+.personal-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 20px -20px 0 -17px #fff,
+    -20px 20px 0 -17px #fff,
+    20px -20px 0 -20px dimgray,
+    0 0 5px 2px dimgray;
+}
+
+.personal-container p {
+    width: 85%;
+    padding: 5px;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.personal-container img {
+    width: 15%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#particles-js-one {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 37px;
+    color:black;
+}
+
+h1 span {
+    color: #2F8F9D;
+}
+
+.personal span {
+    color: rgb(47, 143, 157);
+    font-weight: bolder;
+}
+
+@media all and (max-width: 900px) {
+    .personal-container p {
+        width: 80%;
+    }
+    
+    .personal-container img {
+        width: 20%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .about {
+        margin: 0 5%;
+    }
+
+    .personal-container p {
+        margin: 5px 0;
+    }
+}
+
+@media all and (max-width: 700px) {    
+    .personal-container p {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .personal-container p {
+        font-size: 19px;
+    }
+}
+
+@media all and (max-width: 545px) {
+    .personal-container p {
+        font-size: 18px;
+    }
+
+    .about {
+        margin: 0 2%;
+    }
+}
+
+@media all and (max-width: 490px) {
+    .personal-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .personal-container p {
+        width: 100%;
+    }
+    
+    .personal-container img {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 390px) {
+    h1 {
+        font-size: 33px;
+    }
+
+    .personal-container p {
+        font-size: 17px;
+    }
+
+    .personal-container img {
+        width: 35%;
+    }
+}
+
+@media all and (max-width: 320px) {
+    h1 {
+        font-size: 30px;
+    }
+    .personal-container p {
+        font-size: 15px;
+    }
+}
